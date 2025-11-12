@@ -55,7 +55,7 @@ We use 🤗 Diffusers for inference. VectorSynth requires special preprocessing 
   title={VectorSynth: Controllable Vector Map Synthesis with Diffusion Models},
   author={Cher, Daniel and Wei, Brian and Sastry, Srikumar and Jacobs, Nathan},
   year={2025},
-  eprint={arXiv:XXXX.XXXXX},
+  eprint={arXiv:2511.07744},
   note={arXiv preprint}
 }
 ```
