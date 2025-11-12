@@ -12,7 +12,6 @@ cache/
 /data/*
 
 *.parquet
-*.jpeg
 *.csv
 *.json
 *.geojson
