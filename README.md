@@ -52,7 +52,7 @@ We use 🤗 Diffusers for inference. VectorSynth requires special preprocessing 
 
 ```bibtex
 @inproceedings{cher2025vectorsynth,
-  title={VectorSynth: Controllable Vector Map Synthesis with Diffusion Models},
+  title={VectorSynth: Fine-Grained Satellite Image Synthesis with Structured Semantics},
   author={Cher, Daniel and Wei, Brian and Sastry, Srikumar and Jacobs, Nathan},
   year={2025},
   eprint={arXiv:2511.07744},
