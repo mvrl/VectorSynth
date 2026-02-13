@@ -21,18 +21,11 @@ This repository is the official implementation of VectorSynth. VectorSynth is a 
 
 ## 🤗 Models
 
-[MVRL/VectorSynth](https://huggingface.co/MVRL/VectorSynth)
+VectorSynth: [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Models-yellow?style=flat&logo=hug
+)](https://huggingface.co/MVRL/VectorSynth)
 
-[MVRL/VectorSynth-COSA](https://huggingface.co/MVRL/VectorSynth-COSA)
-
-## 📦 Dataset
-
-Download from [Box](https://wustl.box.com/s/3cciborp260e0hrwvnw1jox2jmeyi4ym):
-- `pixel_tensors/` - Rasterized OSM grids
-- `tag_vocab.pt` - Tag vocabulary
-- `taglist_vocab.pt` - Taglist vocabulary
-
-See [dataset.md](scripts/data/dataset.md) for generating your own data from OpenStreetMap.
+VectorSynth-COSA: [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Models-yellow?style=flat&logo=hug
+)](https://huggingface.co/MVRL/VectorSynth-COSA)
 
 ## 🌏 Inference
 
@@ -55,6 +48,8 @@ Create a conda environment:
 conda env create -f environment.yaml
 conda activate vectorsynth
 ```
+
+The dataset can be downloaded from [here](https://wustl.box.com/s/3cciborp260e0hrwvnw1jox2jmeyi4ym). See [dataset.md](scripts/data/dataset.md) for generating your own data from OpenStreetMap.
 
 See [train.md](scripts/train.md) for training details.
 
