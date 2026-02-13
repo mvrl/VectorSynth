@@ -3,7 +3,7 @@
 <div align="center">
 <img src="imgs/logo.png" width="1000">
 
-<-- [![arXiv](https://img.shields.io/badge/arXiv-2404.06637-red?style=flat&label=arXiv)](https://arxiv.org/pdf/2511.07744) -->
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-2404.06637-red?style=flat&label=arXiv)](https://arxiv.org/pdf/2511.07744) -->
 <!-- [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://example.com) -->
 <!-- [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Spaces-yellow?style=flat&logo=hug)](https://huggingface.co/MVRL/VectorSynth) -->
 
@@ -19,9 +19,34 @@ This repository is the official implementation of VectorSynth. VectorSynth is a 
 
 ![](imgs/teaser.png)
 
-## ⏭️ Next
-- [ ] Release PyTorch `ckpt` files for all models
-- [ ] Release dataset
+## 🤗 Models
+
+| Model | Description | Link |
+|-------|-------------|------|
+| VectorSynth | CLIP embeddings | [MVRL/VectorSynth](https://huggingface.co/MVRL/VectorSynth) |
+| VectorSynth-COSA | COSA embeddings | [MVRL/VectorSynth-COSA](https://huggingface.co/MVRL/VectorSynth-COSA) |
+
+## 📦 Dataset
+
+Download from [Box](https://wustl.box.com/s/3cciborp260e0hrwvnw1jox2jmeyi4ym):
+- `pixel_tensors/` - Rasterized OSM grids
+- `tag_vocab.pt` - Tag vocabulary
+- `taglist_vocab.pt` - Taglist vocabulary
+
+See [dataset.md](scripts/data/dataset.md) for generating your own data from OpenStreetMap.
+
+## 🌏 Inference
+
+```python
+from diffusers import StableDiffusionControlNetPipeline
+pipe = StableDiffusionControlNetPipeline.from_pretrained("MVRL/VectorSynth")
+```
+
+See [inference.py](scripts/inference.py) for a complete example with hint processing.
+
+## 🔬 COSA Embeddings
+
+For using COSA embeddings instead of CLIP, see [cosa/README.md](scripts/cosa/README.md).
 
 ## 🧑‍💻 Setup and Training
 
@@ -33,20 +58,6 @@ conda activate vectorsynth
 ```
 
 See [train.md](scripts/train.md) for training details.
-
-## 📊 Dataset Generation
-
-See [dataset.md](scripts/data/dataset.md) for detailed instructions on generating the dataset(s) from OpenStreetMap data.
-
-## 🌏 Inference
-
-See [inference.md](scripts/inference.md) for a complete inference example.
-
-**Requirements:**
-- Trained ControlNet checkpoint (diffusers format)
-- Render encoder checkpoint
-
-We use 🤗 Diffusers for inference. VectorSynth requires special preprocessing through our render encoder to convert vector map embeddings into control signals for the diffusion model.
 
 ## 📑 Citation
 
