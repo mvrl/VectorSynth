@@ -21,10 +21,8 @@ This repository is the official implementation of VectorSynth. VectorSynth is a 
 
 ## 🤗 Models
 
-| Model | Description | Link |
-|-------|-------------|------|
-| VectorSynth | CLIP embeddings | [MVRL/VectorSynth](https://huggingface.co/MVRL/VectorSynth) |
-| VectorSynth-COSA | COSA embeddings | [MVRL/VectorSynth-COSA](https://huggingface.co/MVRL/VectorSynth-COSA) |
+[MVRL/VectorSynth](https://huggingface.co/MVRL/VectorSynth)
+[MVRL/VectorSynth-COSA](https://huggingface.co/MVRL/VectorSynth-COSA)
 
 ## 📦 Dataset
 
@@ -44,9 +42,9 @@ pipe = StableDiffusionControlNetPipeline.from_pretrained("MVRL/VectorSynth")
 
 See [inference.py](scripts/inference.py) for a complete example with hint processing.
 
-## 🔬 COSA Embeddings
+## 🔬 COSA
 
-For using COSA embeddings instead of CLIP, see [cosa/README.md](scripts/cosa/README.md).
+For using COSA, see [cosa/README.md](scripts/cosa/README.md).
 
 ## 🧑‍💻 Setup and Training
 
