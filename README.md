@@ -22,6 +22,7 @@ This repository is the official implementation of VectorSynth. VectorSynth is a 
 ## 🤗 Models
 
 [MVRL/VectorSynth](https://huggingface.co/MVRL/VectorSynth)
+
 [MVRL/VectorSynth-COSA](https://huggingface.co/MVRL/VectorSynth-COSA)
 
 ## 📦 Dataset
