@@ -49,7 +49,7 @@ conda env create -f environment.yaml
 conda activate vectorsynth
 ```
 
-The dataset can be downloaded from [here](https://wustl.box.com/s/3cciborp260e0hrwvnw1jox2jmeyi4ym). See [dataset.md](scripts/data/dataset.md) for generating your own data from OpenStreetMap.
+The dataset can be downloaded from [here](https://wustl.box.com/s/2g39dpzf0b0zb75wkaf1abmp1aixzy7k). See [dataset.md](scripts/data/dataset.md) for generating your own data from OpenStreetMap.
 
 See [train.md](scripts/train.md) for training details.
 
